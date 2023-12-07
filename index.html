@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        section {
+            padding: 30px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md align-items-center  bg-warning">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand align">
+                <p class="fw-bold text-white h2">
+                    <i class="bi bi-clock-history fw-bolder" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></i>
+                    Master Procastinator
+                </p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="main-nav" class="collapse navbar-collapse justify-content-end align-items-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#topics">Topics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Get In Touch</a>
+                    </li>
+                    <li class="nav-item d-lg-inline">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link text-white" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="btn btn-secondary" href="#pricing">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="intro">
+        <div class="container-xl">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h2>
+                        <div class="display-3">TAOTW</div>
+                        <div class="display-5 text-muted">How to Waste Time</div>
+                        <p class="lead my-4 text-muted">
+                            Lets all learn the art of time wasting from an expert.
+                        </p>
+                        <p class="lead fw-bold">Book by Uzair Bashir</p>
+
+                        <a href="#pricing" class="btn rounded-pill btn-danger shadow-lg my-3"
+                            data-bs-target="#buy-modal" data-bs-toggle="modal">Buy Now</a>
+                    </h2>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-inline">
+                    <span class="tt" data-bs-placement="bottom" title="The Art of Wasting Time Cover">
+                        <img class="img-fluid" src="ebook-cover.png" alt="Cover Page" />
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-warning">
+        <div class="container-xl">
+            <div class="text-center">
+                <h2 class="text-white">Pricing plans</h2>
+                <p class="lead text-white">Choose how much money you want to waste</p>
+            </div>
+        </div>
+        <div class="row my-5 justify-content-center align-items-center">
+            <div class="col-8 col-lg-4 col-xl-3 m-2">
+                <div class="card border-0">
+                    <div class="card-body py-4 text-center">
+                        <h4 class="card-title text-warning">Starter Edition</h4>
+                        <p class="lead card-subtitle">eBook Download Only</p>
+                        <p class="display-5 my-5 text-success fw-bold">Free</p>
+                        <p class="card-text mx-5 text muted d-none d-lg-block">
+                            I want everyone to waste time. So, read for free
+                        </p>
+                        <span class="tt" data-bs-placement="right" title="What are you waiting for?">
+                            <a class="btn rounded-pill border border-danger btn-lg mt-3" data-bs-toggle="modal"
+                                data-bs-target="#free-modal">Get Now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9 col-lg-4 m-2">
+                <div class="card border-danger border-2">
+                    <div class="card-body py-4 text-center">
+                        <h4 class="card-title text-warning">Ameer Baap Edition</h4>
+                        <p class="lead card-subtitle">Still eBook Download Only</p>
+                        <p class="display-4 my-5 text-success fw-bold">$14.99</p>
+                        <p class="card-text mx-5 text muted d-none d-lg-block">
+                            If your father is ameer and you also want to waste money.
+                        </p>
+                        <span class="tt" data-bs-placement="top" title="Spend your father's hard earned money here...">
+                            <a class="btn rounded-pill border border-danger btn-lg mt-3" data-bs-toggle="modal"
+                                data-bs-target="#ameer-modal">Buy Now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-lg-4 col-xl-3 m-2">
+                <div class="card border-0">
+                    <div class="card-body py-4 text-center">
+                        <h4 class="card-title text-warning">Brazy Edition</h4>
+                        <p class="lead card-subtitle">Hard Copy and Reels Edition</p>
+                        <p class="display-5 my-5 text-success fw-bold">$40.99</p>
+                        <p class="card-text mx-5 text muted d-none d-lg-block">
+                            We find the best reels based on your interest and send them to
+                            you.
+                        </p>
+                        <span class="tt" data-bs-placement="left" title="YOU GOT THE MONEYYYY...">
+                            <a class="btn rounded-pill border border-danger btn-lg mt-3" data-bs-toggle="modal"
+                                data-bs-target="#brazy-modal">Subscribe Now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="topics">
+        <div class="container-xl">
+            <div class="text-center">
+                <h2>Inside the book...</h2>
+                <p class="lead text-muted">A quick Glance at topics you will learn</p>
+            </div>
+            <div class="row my-5 g-5 justify-content-center align-items-center">
+                <div class="col-6 col-lg-3">
+                    <img src="kindle.png" class="img-fluid" alt="Kindle Page" srcset="" />
+                </div>
+                <div class="col-10 col-lg-6">
+                    <div class="accordion" id="chapters">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                                    Chapter 1 - How I became the Master Procastinator
+                                </button>
+                            </h2>
+                            <div id="chapter-1" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>
+                                        Remaining at home for a span of three years proves to be a challenging
+                                        undertaking for anyone. I summoned the strength and introspected, questioning
+                                        why I found this feat so formidable. Subsequently, I dedicated myself to a
+                                        contemplative session, formulating a strategic framework to optimize my leisure
+                                        time with greater efficiency.
+                                    </p>
+                                    <p>
+                                        Initially, I encountered difficulty in light of the expectations imposed by my
+                                        parents, extended family, and societal norms. However, over time, even they
+                                        began to acclimate to my chosen path.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
+                                    Chapter 2 - Do you have the ability?
+                                </button>
+                            </h2>
+                            <div id="chapter-2" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>
+                                        Commencing this endeavor was no simple task. It has been three months, and you
+                                        are diligently adhered to a period of idleness with the aspiration of achieving
+                                        a mastery in the art of deliberate procrastination. The boredom may start to
+                                        creep in, prompting contemplation of enrolling in a course or embarking on a job
+                                        search.
+                                    </p>
+                                    <p>
+                                        This is the juncture at which you ought to take a moment for introspection,
+                                        questioning your true desires and intentions regarding the goals you've set out
+                                        to attain.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-3">
+                                    Chapter 3 - Tools that will help
+                                </button>
+                            </h2>
+                            <div id="chapter-3" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>
+                                        Experiencing boredom is an intrinsic part of human behavior. As a disciple
+                                        procastinator, it is imperative to reach a stage where boredom no longer has the
+                                        capacity to affect you. However, it must be acknowledged that achieving this
+                                        state necessitates a significant investment of time and persistent practice. In
+                                        the interim, there are certain tools at your disposal that can offer assistance.
+                                    </p>
+                                    <p>
+                                        Instagram Reels, arcade games, YouTube shorts, and various other forms of social
+                                        media serve as valuable resources to alleviate the pangs of boredom and offer
+                                        entertainment and engagement.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4">
+                                    Chapter 4 - Difficulties along the way
+                                </button>
+                            </h2>
+                            <div id="chapter-4" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>
+                                        As time progresses, the burden of societal expectations grows heavier. It's not
+                                        solely the weight of public anticipation that bears down on you, but also the
+                                        practical necessity for financial resources to meet your daily needs.
+                                    </p>
+                                    <p>
+                                        Let me emphasize a fundamental point: a brief two-day stint without food will
+                                        not lead to your demise. Life, in all its parts, requires concerted efforts and
+                                        perseverance, and this pursuit is no exception. It's true that others may
+                                        indulge in acquiring the latest technological marvels, which might make you feel
+                                        as though you're lagging behind. However, it's crucial to remember that our
+                                        venture in this realm isn't driven by the desire for the latest shiny toy.
+                                        Rather, our aim is to cultivate a lifestyle that affords the freedom to indulge
+                                        in leisure without external constraints.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#chapter-5" aria-expanded="false" aria-controls="chapter-5">
+                                    Chapter 5 - Conclusion
+                                </button>
+                            </h2>
+                            <div id="chapter-5" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                                <div class="accordion-body">
+                                    <p>
+                                        Mastering the art of procrastination is undeniably a challenging endeavor, but
+                                        it is certainly within reach. Armed with the right mindset, appropriate
+                                        guidance, and the necessary tools, one can attain the coveted status of a Master
+                                        Procrastinator.
+                                    </p>
+                                    <p>
+                                        Effectively implementing the teachings of this book in your life has the
+                                        potential to serve as an inspiration for numerous future generations,
+                                        encouraging them to savor moments of leisure without yielding substantial
+                                        accomplishments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="reviews" class="bg-warning">
+        <div class="container-xl">
+            <div class="text-center text-white">
+                <h2>Book reviews</h2>
+                <p class="lead">
+                    What aspiring Procastinators have to say about my book...
+                </p>
+            </div>
+            <div class="row justify-content-center my-4">
+                <div class="col-lg-9">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <h5 class="m-1">INSANE</h5>
+                            <p>
+                                What a piece written. Helped me waste time for 6 months
+                                continously.
+                            </p>
+                            <small>Regina Phalange</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="m-1">Great Book</h5>
+                            <p>
+                                I would write in detail why this book is awesome but i would
+                                rather sit idle than help people.
+                            </p>
+                            <small>John Doe</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="m-1">Great for aspiring Procastinator.</h5>
+                            <p>
+                                Once there was a man who wanted to work. He got on the cycle
+                                daily and got to work. one day he thought he should get a bike
+                                to get to work quickly and do more work. Then he died of
+                                workload. Thats why you shouldn't work. Thank You for
+                                listening to me as I wasted mine and your 5 minutes
+                                succesfully. Thats my motivation: ALWAYS HELP OTHERS WASTE TIME
+                            </p>
+                            <small>Ken Adams</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container-xl">
+            <div class="text-center">
+                <h2> Contact Us</h2>
+                <p class="lead">Want to waste more time? Fill this cause nobody gives a shit what you say...</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <form>
+
+                        <label for="email" class="form-label">Email ID</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-at"></i>
+
+                            </span>
+                            <input type="email" id="email" class="form-control" placeholder="e.g baba@eg.com">
+
+                        </div>
+
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="e.g Baba">
+                        </div>
+
+
+                        <div class="form-floating mt-3">
+                            <select id="subject" class="form-select">
+                                <option value="instagram">Instagram Reels</option>
+                                <option value="shorts">Youtube Shorts</option>
+                                <option value="idle" selected>Sitting Idle</option>
+                                <option value="wasteother">By Helping Others Waste time</option>
+                            </select>
+                            <label for="subject" class="form-label">How do you waste most of you time?</label>
+                        </div>
+
+                        <label for="query" class="form-label mt-3">Waste our time and your by writing something
+                            stupid...</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots"></i>
+                            </span>
+                            <textarea id="query" class="form-control" style="height: 150px;"></textarea>
+                            <div class="text-center">
+                            </div>
+
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-warning">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay in the Loop</h2>
+                <p class="lead">Get the latest updates...</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-9 text-center">
+                    <p class="text-muted my-4">Propaganda continues to make the upcoming Procastinators work or stop
+                        wasting time. But we are here together to fight them. Register below to get the latest updates
+                        about the Propagandas... </p>
+                    <button class="btn btn-lg btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#reg-modal">Register</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="reg-modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get The Updates</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Enter Your EMail so the we can contionously give you updates about the latest propagandas the
+                        world is using againt our community.</p>
+                    <label for="modal-email" class="form-label">Enter Email Address:</label>
+                    <input type="email" class="form-control" id="modal-email">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="buy-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Select Your Option</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>To Buy the Starter Edition click Free</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#free-modal1">Free</button>
+                    <p class="mt-4">To Buy for $14.99 click Ameer Baap</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ameer-modal1">Ameer
+                        Baap</button>
+                    <p class="mt-4">To Buy the Reels Edition click Brazy</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#brazy-modal1">Brazy</button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="free-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get it for Free Now</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Enter Details Where we can mail you your copy.</h5>
+                    <form>
+
+                        <label for="email" class="form-label">Email ID</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-at"></i>
+
+                            </span>
+                            <input type="email" id="email" class="form-control" placeholder="e.g baba@eg.com">
+
+                        </div>
+
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="e.g Baba">
+                        </div>
+
+                        <label for="query" class="form-label mt-3">Waste our time and your by writing something
+                            stupid...</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots"></i>
+                            </span>
+                            <textarea id="query" class="form-control" style="height: 150px;"></textarea>
+                            <div class="text-center">
+                            </div>
+
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ameer-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Buy Now</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Enter Details Where we can mail you your copy.</h5>
+                    <form>
+
+                        <label for="email" class="form-label">Email ID</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-at"></i>
+
+                            </span>
+                            <input type="email" id="email" class="form-control" placeholder="e.g baba@eg.com">
+
+                        </div>
+
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="e.g Baba">
+                        </div>
+
+                        <label for="payment" class="formlabel">Enter Card Details</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+
+                            <input type="text" id="payment" class="form-control">
+                            <span class="input-group-text">Name</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="text" id="payment" class="form-control">
+                            <span class="input-group-text">Number</span>
+                        </div>
+                        <div class="input-group"><span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="" id="payment" class="form-control">
+                            <span class="input-group-text">CVV</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="date" id="payment" class="form-control">
+                        </div>
+
+                        <label for="query" class="form-label mt-3">Waste our time and your by writing something
+                            stupid...</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots"></i>
+                            </span>
+                            <textarea id="query" class="form-control" style="height: 150px;"></textarea>
+                            <div class="text-center">
+                            </div>
+
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="brazy-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Buy Now</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Enter Details Where we can mail you your copy.</h5>
+                    <form>
+
+                        <label for="email" class="form-label">Email ID</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-at"></i>
+
+                            </span>
+                            <input type="email" id="email" class="form-control" placeholder="e.g baba@eg.com">
+
+                        </div>
+
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="e.g Baba">
+                        </div>
+
+                        <label for="payment" class="formlabel">Enter Card Details</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+
+                            <input type="text" id="payment" class="form-control">
+                            <span class="input-group-text">Name</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="text" id="payment" class="form-control">
+                            <span class="input-group-text">Number</span>
+                        </div>
+                        <div class="input-group"><span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="" id="payment" class="form-control">
+                            <span class="input-group-text">CVV</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="date" id="payment" class="form-control">
+                        </div>
+                        <label for="insta">Enter Your Instagram ID</label>
+                        <div class="input-group"><span class="input-group-text">
+                                <i class="bi bi-instagram"></i>
+                            </span>
+                            <input type="text" id="insta" class="form-control">
+                        </div>
+
+                        <label for="query" class="form-label mt-3">Waste our time and your by writing something
+                            stupid...</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots"></i>
+                            </span>
+                            <textarea id="query" class="form-control" style="height: 150px;"></textarea>
+                            <div class="text-center">
+                            </div>
+
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="free-modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get it for Free Now</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Enter Details Where we can mail you your copy.</h5>
+                    <form>
+
+                        <label for="email" class="form-label">Email ID</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-at"></i>
+
+                            </span>
+                            <input type="email" id="email" class="form-control" placeholder="e.g baba@eg.com">
+
+                        </div>
+
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="e.g Baba">
+                        </div>
+
+                        <label for="query" class="form-label mt-3">Waste our time and your by writing something
+                            stupid...</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots"></i>
+                            </span>
+                            <textarea id="query" class="form-control" style="height: 150px;"></textarea>
+                            <div class="text-center">
+                            </div>
+
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buy-modal">Go Back</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ameer-modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Buy Now</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Enter Details Where we can mail you your copy.</h5>
+                    <form>
+
+                        <label for="email" class="form-label">Email ID</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-at"></i>
+
+                            </span>
+                            <input type="email" id="email" class="form-control" placeholder="e.g baba@eg.com">
+
+                        </div>
+
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="e.g Baba">
+                        </div>
+
+                        <label for="payment" class="formlabel">Enter Card Details</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+
+                            <input type="text" id="payment" class="form-control">
+                            <span class="input-group-text">Name</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="text" id="payment" class="form-control">
+                            <span class="input-group-text">Number</span>
+                        </div>
+                        <div class="input-group"><span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="" id="payment" class="form-control">
+                            <span class="input-group-text">CVV</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="date" id="payment" class="form-control">
+                        </div>
+
+                        <label for="query" class="form-label mt-3">Waste our time and your by writing something
+                            stupid...</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots"></i>
+                            </span>
+                            <textarea id="query" class="form-control" style="height: 150px;"></textarea>
+                            <div class="text-center">
+                            </div>
+
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buy-modal">Go Back</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="brazy-modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Buy Now</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h5>Enter Details Where we can mail you your copy.</h5>
+                    <form>
+
+                        <label for="email" class="form-label">Email ID</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-at"></i>
+
+                            </span>
+                            <input type="email" id="email" class="form-control" placeholder="e.g baba@eg.com">
+
+                        </div>
+
+                        <label for="name" class="form-label">Name</label>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" id="name" class="form-control" placeholder="e.g Baba">
+                        </div>
+
+                        <label for="payment" class="formlabel">Enter Card Details</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+
+                            <input type="text" id="payment" class="form-control">
+                            <span class="input-group-text">Name</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="text" id="payment" class="form-control">
+                            <span class="input-group-text">Number</span>
+                        </div>
+                        <div class="input-group"><span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="" id="payment" class="form-control">
+                            <span class="input-group-text">CVV</span>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </span>
+                            <input type="date" id="payment" class="form-control">
+                        </div>
+                        <label for="insta">Enter Your Instagram ID</label>
+                        <div class="input-group"><span class="input-group-text">
+                                <i class="bi bi-instagram"></i>
+                            </span>
+                            <input type="text" id="insta" class="form-control">
+                        </div>
+
+                        <label for="query" class="form-label mt-3">Waste our time and your by writing something
+                            stupid...</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots"></i>
+                            </span>
+                            <textarea id="query" class="form-control" style="height: 150px;"></textarea>
+                            <div class="text-center">
+                            </div>
+
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buy-modal">Go Back</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start bg-warning text-white" id="sidebar">
+        <div class="offcanvas-header">
+            <h5>Check out my more books</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="chapters">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                            The Psychology of Time
+                        </button>
+                    </h2>
+                    <div id="chapter-1" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+
+                            <p>
+                                This book delves into our behaviour with time. Achieving proficiency in the art of time
+                                wasting is not dependent on one's knowledge, IQ, or skill in idleness. Rather, it
+                                revolves around the behaviors one exhibits when their body begins to weary of
+                                inactivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
+                            How to stop worrying and start Living.
+                        </button>
+                    </h2>
+                    <div id="chapter-2" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+
+                            <p>
+                                The three-step process for effectively managing any problem without succumbing to worry:
+                            </p>
+                            <p>1. Embrace the reality of the situation.</p>
+                            <p>2. Refrain from engaging in problem at hand.</p>
+                            <p>3. Channel your time and energy towards honing the art of effective procrastination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-3">
+                            MUJIWUNT
+                        </button>
+                    </h2>
+                    <div id="chapter-3" class="accordion-collapse collapse" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+
+                            <p>
+                                The Kashmiri Secret to a Long and Happy Life
+                            </p>
+                            <p>MUJI in Kashmiri means Raddish and WUNT means Camel. This book elucidates the art of
+                                adopting a leisurely and contemplative approach to Eat, same to the unhurried example of
+                                a camel, while encouraging a detachment from the preoccupations of life's purpose and
+                                direction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown mt-3">
+                <h5 class="text-white">Some Diseases that may occur.</h5>
+                <button class="btn btn-success dropdown-toggle btn-lg mt-2" type="button" id="book-dropdown"
+                    data-bs-toggle="dropdown">
+                    Select disease you feel:
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Heart Disease</li>
+                    <li class="dropdown-item">Diabetes</li>
+                    <li class="dropdown-item">High Blood Pressure</li>
+                    <li class="dropdown-item">Autism</li>
+                </ul>
+            </div>
+
+            <div class="dropdown mt-3">
+                <h5 class="text-white">Levels to become Master Procastinator</h5>
+                <button class="btn btn-success dropdown-toggle btn-lg mt-2" type="button" id="book-dropdown"
+                    data-bs-toggle="dropdown">
+                    Select level you want to know about:
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Beginner Procastinator</li>
+                    <li class="dropdown-item">Disciple Procastinator</li>
+                    <li class="dropdown-item">Expert Procastinator</li>
+                    <li class="dropdown-item">Master Procastinator</li>
+                </ul>
+            </div>
+
+            <div class="dropdown mt-3">
+                <h5 class="text-white">Take test to upgrade level</h5>
+                <p class="lead ">It is imperative that we perpetually subject ourselves to rigourous assessment in order
+                    to enhance our aptitude and ascend to the pinnacleof mastery in the art of Procastination.</p>
+                <button class="btn btn-success dropdown-toggle btn-lg mt-2" type="button" id="book-dropdown"
+                    data-bs-toggle="dropdown">
+                    Select the Test Level:
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Disciple Procastinator</li>
+                    <li class="dropdown-item">Expert Procastinator</li>
+                    <li class="dropdown-item">Master Procastinator</li>
+                </ul>
+            </div>
+
+            <div class="offcanvas-footer text-end m-4 text-dark fw-bold">&COPY; UZAIR BASHIR</div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+
+</html>
